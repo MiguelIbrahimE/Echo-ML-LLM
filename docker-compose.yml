@@ -1,0 +1,5 @@
+services:
+  docs-be:
+    build: .
+    ports:
+      - "8001:8000"

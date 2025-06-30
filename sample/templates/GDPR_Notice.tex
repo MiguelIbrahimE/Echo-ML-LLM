@@ -1,0 +1,60 @@
+% ---------------------------------------------------------------------------
+%  E.M.E International SARL – GDPR Data Protection Policy
+%  Version 1.0 – 25 June 2025
+% ---------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{article}
+
+% ----------------- PACKAGES -----------------
+\usepackage{geometry}
+  \geometry{margin=1in}
+\usepackage{graphicx,xcolor,hyperref,fancyhdr,setspace,longtable,booktabs,titlesec,textcomp}
+
+\definecolor{emeCharcoal}{HTML}{333333}
+\definecolor{emeRed}{HTML}{E31B1B}
+
+% Header / footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[height=14pt]{logo.jpeg}}
+\rhead{\color{emeCharcoal}E.M.E International SARL}
+\cfoot{\thepage}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{emeCharcoal}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+\newcommand{\EME}{E.M.E International SARL}
+
+\begin{document}
+\onehalfspacing
+
+% ---------------- TITLE PAGE ----------------
+\begin{center}
+  \vspace*{2cm}
+  {\Huge\bfseries GDPR Data Protection Policy}\\[1em]
+  Version 1.0 — Effective \textbf{25 June 2025}\\[2.5em]
+  \EME\\[0.4em]
+  Fanar Main Road, Tawk Bldg., Mount Beirut, Lebanon\\
+  Belgian Branch: Coupure Recht 88, 9000 Ghent, Belgium\\[0.5em]
+\end{center}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+% ---------------- MAIN CONTENT --------------
+\section{Purpose and Scope \small(Recital 39, Art.~5)}
+This Policy establishes the principles, organisational measures, and procedures by which \EME{} ensures that all personal data are processed lawfully, fairly, transparently, and in accordance with GDPR.
+
+% … (all other sections stay exactly as you wrote them) …
+
+% ---------------- APPENDICES ----------------
+\appendix
+\section*{Appendix A — Processor Register (Art.~30(2))}
+\textless Insert live table of all processors with processing purpose, location, SCC status.\textgreater
+
+\section*{Appendix B — Transfer Impact Assessment Template}
+\textless Insert template aligned with EDPS \& EDPB guidelines.\textgreater
+
+\end{document}

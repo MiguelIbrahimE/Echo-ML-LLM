@@ -1,0 +1,71 @@
+% ---------------------------------------------------------------------------
+%  E.M.E International SARL – Terms & Conditions of Service
+% ---------------------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{geometry}
+  \geometry{margin=1in}
+\usepackage{graphicx,xcolor,titlesec,fancyhdr,enumitem,hyperref,setspace,longtable,booktabs,textcomp}
+
+\definecolor{emeCharcoal}{HTML}{333333}
+\definecolor{emeRed}{HTML}{E31B1B}
+\definecolor{emeCyan}{HTML}{26AA9F}
+
+\newcommand{\Company}{E.M.E International SARL}
+\newcommand{\DocumentTitle}{\huge\bfseries Terms \& Conditions of Service\\[0.3em]{\normalsize (\"Agreement\")}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[height=14pt]{logo.jpeg}}
+\rhead{\color{emeCharcoal}\Company}
+\cfoot{\thepage}
+
+\titleformat{\section}{\Large\color{emeCharcoal}\bfseries\underline}{\Roman{section}.}{1em}{}
+\titleformat{\subsection}{\normalsize\color{emeCharcoal}\bfseries}{\Alph{subsection}.}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\itshape}{\arabic{subsubsection}.}{.5em}{}
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\onehalfspacing
+
+% ---------- TITLE PAGE ----------
+\begin{center}
+    \vspace*{3cm}
+    \includegraphics[width=0.28\textwidth]{logo.jpeg}\\[2cm]
+    {\DocumentTitle}\\[2cm]
+    \textbf{Version:} 1.0 \\[0.3em]
+    \textbf{Effective Date:} 25 June 2025 \\[3cm]
+    \color{emeCharcoal}\Company\\
+    Registered Office: Fanar Main Road, Tawk Bldg., Mount Beirut, Lebanon\\[0.5em]
+    Belgian Branch (correspondence): Coupure Recht 88, 9000 Ghent, Belgium
+\end{center}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+% ---------- BODY ----------
+\section{Definitions}
+% … keep the content you already wrote …
+
+% (rest of sections unchanged, but substitute real values
+% for <30>, <10>, etc. or escape them with \textless … \textgreater)
+
+\appendix
+\section*{Schedule A – Software Licence Terms}
+\textless Insert software licence here\textgreater
+
+\section*{Schedule B – Cancellation Refund Table}
+\begin{longtable}{@{}ll@{}}
+\toprule
+Notice Period & Refund Percentage\\\midrule
+More than 30 days & 90\%\\
+15–29 days & 50\%\\
+8–14 days & 25\%\\
+7 days or fewer & 0\%\\\bottomrule
+\end{longtable}
+
+\section*{Schedule C – Privacy Notice}
+\textless Insert GDPR-compliant privacy notice\textgreater
+
+\end{document}

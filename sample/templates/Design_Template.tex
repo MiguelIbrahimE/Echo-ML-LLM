@@ -1,0 +1,43 @@
+% ---------------------------------------------------------------------------
+%  Generic Corporate Report / Statement template
+% ---------------------------------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{geometry}
+  \geometry{margin=1in}
+\usepackage{graphicx,xcolor,titlesec,fancyhdr,setspace,hyperref,array,longtable,booktabs,textcomp}
+
+\definecolor{emeCharcoal}{HTML}{333333}
+\definecolor{emeRed}{HTML}{E31B1B}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[height=14pt]{logo.jpeg}}
+\rhead{\color{emeCharcoal}\textbf{E.M.E International SARL}}
+\cfoot{\thepage}
+
+\titleformat{\section}{\color{emeCharcoal}\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\color{emeCharcoal}\large\bfseries}{\thesubsection}{1em}{}
+
+\newcommand{\ESG}{ESG}
+\newcommand{\EME}{E.\,M.\,E International SARL}
+
+\begin{document}
+\onehalfspacing
+
+\begin{center}
+  \vspace*{3cm}
+  \includegraphics[width=0.33\textwidth]{logo.jpeg}\\[2.5cm]
+  {\color{emeCharcoal}\Huge\bfseries CORPORATE REPORT}\\[1.5cm]
+  {\Large\textbf{\EME}}\\[1cm]
+  \today
+\end{center}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\section{Executive Summary}
+% …
+
+\end{document}
